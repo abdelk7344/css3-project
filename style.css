@@ -15,14 +15,14 @@ body {
 
 #header {
   background: white;
-  height:100px;
+  height: 100px;
   width: 400px;
   border-radius: 25px;
   border: 3px solid lightblue;
   color: #006680;
   padding: 10px;
   text-shadow: 2px 2px 2px gray;
- display: flex;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
@@ -31,36 +31,39 @@ body {
   font-size: 50px;
 }
 
-#header:hover{
+#header:hover {
   width: 450px;
 }
 
-.circle-group{
+.circle-group {
   /*display:inline-block;*/
   margin: 50px auto auto auto;
-  text-align: center; 
+  text-align: center;
 }
 
 .circle {
   border-radius: 50%;
   border: solid 4px white;
-  background: linear-gradient(to bottom left, white,#006680);
-  width:250px;
+  background: linear-gradient(to bottom left, white, #006680);
+  width: 250px;
   height: 250px;
-  display:inline-block;
+  display: inline-block;
   margin: auto 20px auto auto;
-  transition: width 2s,height 2s;
+  transition: width 2s, height 2s;
 }
 
-.circle:hover{
-  width:300px;
-  height:300px;
-  animation: spinning 4s ;
-  animation-iteration-count: infinite; 
-  
+.circle:hover {
+  width: 300px;
+  height: 300px;
+  animation: spinning 4s;
+  animation-iteration-count: infinite;
 }
 
-@keyframes spinning{
-  from { transform: rotate(0deg); }
-	to { transform: rotate(360deg); }
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
