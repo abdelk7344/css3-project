@@ -11,6 +11,7 @@ body {
   width: 100%;
   overflow: hidden;
   background: linear-gradient(white, #006680);
+  /*gives it the fading white-blue background*/
 }
 
 #header {
@@ -18,52 +19,74 @@ body {
   height: 100px;
   width: 400px;
   border-radius: 25px;
+  /*gives the header a curved border*/
   border: 3px solid lightblue;
   color: #006680;
   padding: 10px;
+  /* gives 10 pixels of space between content and border*/
   text-shadow: 2px 2px 2px gray;
+  /* gives the text in the header a grey shadow by decalring a blur, color, and shadow length*/
   display: flex;
+  /*this defines a flex contianer*/
   justify-content: center;
+  /* aligns the text within in the flex container*/
   flex-direction: column;
+  /* establishes the axis we want to modify which would be a column since we are modifying it vertically*/
   text-align: center;
+  /* centers the text inside the positioned flex container*/
   margin: 50px auto auto auto;
+  /* moves the div down down 50px while centering it in every other direction*/
   transition: width 2s;
+  /* establishes a transition which changes the width of the div with a 2 second span*/
   font-size: 50px;
 }
 
 #header:hover {
   width: 450px;
+  /* once mouse is set on the header it will expand its width to 450px*/
 }
 
 .circle-group {
-  /*display:inline-block;*/
   margin: 50px auto auto auto;
+  /*moves the three circles down 50px*/
   text-align: center;
+  /*centers the group of circles*/
 }
 
 .circle {
   border-radius: 50%;
+  /* makes the circle's cirumfrance*/
   border: solid 4px white;
   background: linear-gradient(to bottom left, white, #006680);
+  /*gives it the fading white-blue background*/
   width: 250px;
   height: 250px;
   display: inline-block;
+  /*keeps the circles together as one but gives space between them*/
   margin: auto 20px auto auto;
+  /* makes the space between the circles 20px while centering them*/
   transition: width 2s, height 2s;
+  /* establishes a transition which changes the width and height of the circle with a 2 second span*/
 }
 
 .circle:hover {
   width: 300px;
+  /* once mouse is set on the circle it will expand its width to 300px*/
   height: 300px;
+  /* once mouse is set on the circle it will expand its height to 300px*/
   animation: spinning 4s;
+  /* once mouse is set on the circle an animation with the name of apinning and a duration will take place*/
   animation-iteration-count: infinite;
+  /* this animation will be continuous as long as the mouse is on the circle*/
 }
 
 @keyframes spinning {
   from {
     transform: rotate(0deg);
+    /* at the beggining of the aimation it will rotate the circle from zero degrees*/
   }
   to {
     transform: rotate(360deg);
+    /* to 360 degrees which will be one full rotation*/
   }
 }
